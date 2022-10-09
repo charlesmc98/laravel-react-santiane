@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel + React | Santiane</title>
+        <title>Santiane Traveling</title>
 
         @viteReactRefresh
         @vite('resources/js/app.jsx')
     </head>
     <body class="antialiased">
-        <div id="app"></div>
+        <div id="root"></div>
     </body>
 </html>

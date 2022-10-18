@@ -4,8 +4,8 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 
 const navigation = [
     { name: 'Accueil', to: '/' },
-    { name: 'Voyages consultés', to: '/viewed-travels' },
-    { name: 'Voyager', to: '/create-travel' }
+    { name: 'Voyages consultés', to: '/trip/list' },
+    { name: 'Voyager', to: '/trip/create' }
 ]
 
 function classNames(...classes) {

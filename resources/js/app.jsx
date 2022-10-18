@@ -9,8 +9,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 /* import Pages */
 import Layout from './pages/Layout';
 import Home from './pages/Home';
-import Travel from './pages/Travel';
-import ViewedTravels from './pages/ViewedTravels';
+import CreateTrip from './pages/CreateTrip';
+import EditTrip from './pages/EditTrip';
+import ListTrip from './pages/ListTrip';
 
 export default function App() {
     return (
@@ -18,8 +19,9 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
-                    <Route path="create-travel" element={<Travel />} />
-                    <Route path="viewed-travels" element={<ViewedTravels />} />
+                    <Route path="/trip/create" element={<CreateTrip />} />
+                    <Route path="/trip/edit/:id" element={<EditTrip />} />
+                    <Route path="/trip/list" element={<ListTrip />} />
                 </Route>
             </Routes>
         </BrowserRouter>
